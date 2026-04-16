@@ -1,0 +1,108 @@
+/* Style pour le tableau de bord */
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0px auto;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+input[type="text"]{
+    text-transform: capitalize;
+  }
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+    text-transform: capitalize;
+  }
+
+h1, h2 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-top: 110px;
+}
+
+.stat-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 40px;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #555;
+}
+
+.stat-item p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table thead {
+    background-color: #450808;
+    color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+table tbody tr:hover {
+    background-color: #d1ecf1;
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+
+    .stat-item:last-child {
+        margin-bottom: 0;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+}
+
